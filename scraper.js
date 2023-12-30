@@ -16,8 +16,8 @@ const puppeteer = require('puppeteer');
           console.error('Sign in link not found.');
         }
       });
-    await page.type('#userNameEmail', 'Sam Aronow');
-    await page.type('#accountPW', 'Timr2wp75!');
+    await page.type('#userNameEmail', 'YOUR USERNAME');
+    await page.type('#accountPW', 'YOUR PASSWORD');
     
     await page.evaluate(() => {
         const span = document.querySelector('span[onclick="login(false);"]');
@@ -101,7 +101,7 @@ const puppeteer = require('puppeteer');
 
   function runPythonFile(file){
     const { exec } = require('child_process');
-    const command = 'python /Users/samaronow/Strava/'+file;
+    const command = 'python'+ file;
     
     exec(command, (error, stdout, stderr) => {
       if (error) {
