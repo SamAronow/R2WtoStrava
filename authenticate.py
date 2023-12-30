@@ -1,6 +1,6 @@
 from requests_oauthlib import OAuth2Session
-client_id = '118756'
-client_secret = '726727bb39f2cc81c5afa58ae4cf60485d5ef7cf'
+client_id = 'enter your client id'
+client_secret = 'enter your client secret'
 redirect_url = 'http://localhost'
 
 session = OAuth2Session(client_id=client_id,redirect_uri=redirect_url)
