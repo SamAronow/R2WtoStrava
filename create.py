@@ -1,6 +1,6 @@
 import requests
 
-access_token = 'fb6390850ad9daac481c9898ffbd1ef1fd6494db'
+access_token = 'enter your access token from postman (or any cURL command)'
 
 # Endpoint for creating an activity
 url = 'https://www.strava.com/api/v3/activities'
@@ -8,7 +8,7 @@ url = 'https://www.strava.com/api/v3/activities'
 # Set the authorization header with the access token
 headers = {'Authorization': f'Bearer {access_token}'}
 
-file_path = '/Users/samaronow/strava/log.txt'
+file_path = 'log.txt'
 file = open(file_path, "r")
 txt=file.read()
 
