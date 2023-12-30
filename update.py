@@ -1,10 +1,10 @@
 import requests
 
-access_token = 'fb6390850ad9daac481c9898ffbd1ef1fd6494db'
+access_token = 'YOUR TOKEN'
 url = 'https://www.strava.com/api/v3/athlete/activities?per_page=30'
 headers = {'Authorization': f'Bearer {access_token}'}
 response = requests.get(url, headers=headers)
-file_path = '/Users/samaronow/strava/log.txt'
+file_path = 'log.txt'
 file = open(file_path, "r")
 description=file.read()
 index = (int)(description[0])
